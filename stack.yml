@@ -1,0 +1,7 @@
+version: "3.7"
+
+services:
+  app:
+    image: gcr.io/spot-that-fire-256218/app
+    ports:
+      - 80:8000
