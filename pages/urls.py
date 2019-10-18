@@ -1,5 +1,9 @@
 from django.urls import path
-from .views import homePageView
+from .views import homePageView, HelloWord
 
 
-urlpatterns = [path("", homePageView, name="home")]
+urlpatterns = [
+    path("", HelloWord, name="home")
+
+
+]
