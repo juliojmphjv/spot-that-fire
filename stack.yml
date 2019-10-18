@@ -5,3 +5,8 @@ services:
     image: gcr.io/spot-that-fire-256218/app
     ports:
       - 80:8000
+    deploy:
+      update_config:
+        parallelism: 1
+        delay: 10s
+        order: start-first
