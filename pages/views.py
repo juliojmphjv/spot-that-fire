@@ -24,3 +24,7 @@ def cadastro(request):
 def mapa(request):
     
     return render(request, 'map.html')
+
+def missao(request):
+    
+    return render(request, 'missao.html')
