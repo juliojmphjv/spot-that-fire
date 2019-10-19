@@ -12,4 +12,6 @@ COPY services services
 COPY manage.py .
 COPY ./.docker/entrypoint.sh /
 
+VOLUME /root/data
+
 ENTRYPOINT ["/entrypoint.sh"]
