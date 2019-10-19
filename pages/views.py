@@ -20,3 +20,7 @@ def whats_signup(request):
 def cadastro(request):
     
     return render(request, 'cadastro.html')
+
+def mapa(request):
+    
+    return render(request, 'map.html')
