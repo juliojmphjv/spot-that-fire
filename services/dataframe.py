@@ -1,10 +1,11 @@
 import pandas
 from io import StringIO
 from services.nrt_downloader import download_viirs_nrt_today
-from os import path
+from os import path, listdir
+from functools import reduce
 
-
-dataframe_path = "data/dataframe.pickle"
+dataframe_path = "data/viirs.pickle"
+dataframe_incra_path = "data/incra.pickle"
 
 
 def builder():
@@ -28,4 +29,26 @@ def compare_dataframes(old_df, new_df):
     return old_df
 
 
-builder()
+def builder_incra_state(state="amazonas"):
+
+    dataframe_list = []
+
+    for each_file in listdir(f"incra_data/{state}"):
+        dataframe_list.append(
+            pandas.read_csv(
+                f"incra_data/{state}/{each_file}", error_bad_lines=False
+            )
+        )
+
+    return pandas.concat(dataframe_list)
+
+
+def builder_incra(states=["amazonas", "acre"]):
+
+    dataframe_list = []
+
+    dataframe_list.append(builder_incra_state(state="amazonas"))
+    dataframe_list.append(builder_incra_state(state="acre"))
+
+    dataframe = pandas.concat(dataframe_list)
+    dataframe.to_pickle(dataframe_incra_path)

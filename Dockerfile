@@ -13,6 +13,7 @@ COPY manage.py .
 COPY templates templates
 COPY static static
 COPY notification_sender notification_sender
+COPY infra_data infra_data
 
 COPY ./.docker/entrypoint.sh /
 
