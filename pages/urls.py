@@ -7,6 +7,7 @@ urlpatterns = [
     path("", home, name="home"),
     path("boilerplate/", boilerplate, name="home"),
     path("whatsapp/", whats_signup, name="whats"),
-    path("cadastro/", cadastro, name="cadastro")
+    path("cadastro/", cadastro, name="cadastro"),
+    path("home/cadastro/", cadastro, name="cadastro")
 
 ]
