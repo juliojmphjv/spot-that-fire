@@ -5,6 +5,10 @@ from django.http import HttpResponse
 def homePageView(request):
     return HttpResponse("Hello, World")
 
-def HelloWord(request):
+def home(request):
 
-    return render(request, 'hello_word.html')
+    return render(request, 'index.html')
+
+def boilerplate(request):
+
+    return render(request, 'boilerplate.html')
