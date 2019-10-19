@@ -3526,7 +3526,7 @@ tbody.collapse.show {
   padding: 0.625rem 1.25rem;
   clear: both;
   font-weight: 400;
-  color: #212529;
+  color: inherit;
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
@@ -3549,7 +3549,7 @@ tbody.collapse.show {
 
 .dropdown-item.disabled,
 .dropdown-item:disabled {
-  color: #6c757d;
+  color: white;
   background-color: transparent;
 }
 
@@ -14551,7 +14551,7 @@ textarea {
 
 .nav-pills .nav-item .nav-link.active {
   color: #fff;
-  background-color: #9c27b0;
+  background-color: #ff4d4d;
   box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(156, 39, 176, 0.6);
 }
 
