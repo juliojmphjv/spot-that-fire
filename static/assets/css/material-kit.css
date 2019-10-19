@@ -8970,16 +8970,16 @@ button:focus {
 }
 
 .btn.btn-primary.btn-link {
-  background-color: transparent;
-  color: #9c27b0;
+  background-color: whitesmoke;
+  color: black;
   box-shadow: none;
 }
 
 .btn.btn-primary.btn-link:hover,
 .btn.btn-primary.btn-link:focus,
 .btn.btn-primary.btn-link:active {
-  background-color: transparent;
-  color: #9c27b0;
+  background-color: gray;
+  color: black;
 }
 
 .btn.btn-secondary {
