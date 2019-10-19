@@ -617,7 +617,7 @@ figure {
 }
 
 img {
-  vertical-align: middle;
+  vertical-align: top;
   border-style: none;
 }
 
@@ -14221,7 +14221,7 @@ textarea {
   background-color: transparent !important;
   box-shadow: none;
   padding-top: 25px;
-  color: #fff;
+  color: black;
 }
 
 #navbar .navbar {
@@ -16091,7 +16091,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 
 .page-header .title {
-  color: #fff;
+  color: black;
 }
 
 .page-header.header-small {
