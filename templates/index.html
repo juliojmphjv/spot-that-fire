@@ -11,82 +11,82 @@
  =========================================================
 
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
-{% extends "base.html" %}
+ {% extends "base.html" %}
 
 
-{% block content %}
-
-    {% load staticfiles %}
-
-  <div class="page-header header-filter" data-parallax="true" style="background-image: url('{% static 'assets/img/bg3.jpg' %}')">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 ml-auto mr-auto">
-          <div class="brand text-center">
-            <h1>Incêndios</h1>
-            <h3 class="title text-center">Como são causados e onde ocorrem?</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="main main-raised">
-    <div class="container">
-      <div class="section text-center">
-        <h2 class="title">O quê são?</h2>
-        <h3>aaaa</h3>
-        <h2 class="title">Por quê prevenir incêndios?</h2>
-        <h3>O fogo tem sido o responsável direto por prejuízos de ordem econômica, social e ambiental, 
-          em que prejuízos causados pelos incêndios envolvem morte ou redução da capacidade produtiva dos cultivos, 
-          impactos nos rios, solos e, ainda, emissões de gases nocivos ao ambiente que impactam diretamente nas variações 
-          climáticas com o agravamento do efeito estufa. O objetivo da prevenção resume-se na implementação de ações para 
-          reduzir as causas dos incêndios e os riscos de propagação do fogo. 
-        </h3>
-      </div>
-      <div class="col-lg-12 col-md-12">
-        <div class="row">
-          <div class="col-md-3">
-            <ul class="nav nav-pills nav-pills-icons flex-column" role="tablist">
-                <!--
-                                    color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger"
-                                -->
-              <li class="nav-item">
-                <a class="nav-link active" href="#dashboard-1" role="tab" data-toggle="tab">
-                  <i class="material-icons">dashboard</i> Dados
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#schedule-1" role="tab" data-toggle="tab">
-                  <i class="material-icons">schedule</i> Estatística
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-8">
-            <div class="tab-content">
-              <div class="tab-pane active" id="dashboard-1">
-                <h3>Dados nos mostram que 85% das causas dos incêndios são resultantes da ação antrópica (humana) e, destes: </h3>
-                  <h3>
-                    <ul>
-                      <li>40% foram ocasionados por queima para limpeza</li>
-                      <li>20% por incendiários</li>
-                      <li>15% por fatores diversos</li>
-                      <li>10% por fumantes</li>
-                    </ul> 
-                  </h3>
-              </div>    
-            <div class="tab-pane" id="schedule-1">
-                <h3>O gráfico a seguir utiliza os dados do INPE (Instituto Nacional de Pesquisas Espaciais):</h3>
-                <li>Gráfico</li>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-{% endblock %}
-
-</html>
+ {% block content %}
+ 
+     {% load staticfiles %}
+ 
+   <div class="page-header header-filter" data-parallax="true" style="background-image: url('{% static 'assets/img/bg3.jpg' %}')">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-8 ml-auto mr-auto">
+           <div class="brand text-center">
+             <h1>Incêndios</h1>
+             <h3 class="title text-center">Como são causados e onde ocorrem?</h3>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="main main-raised">
+     <div class="container">
+       <div class="section text-center">
+         <h2 class="title">O quê são?</h2>
+         <h3>aaaa</h3>
+         <h2 class="title">Por quê prevenir incêndios?</h2>
+         <h3>O fogo tem sido o responsável direto por prejuízos de ordem econômica, social e ambiental, 
+           em que prejuízos causados pelos incêndios envolvem morte ou redução da capacidade produtiva dos cultivos, 
+           impactos nos rios, solos e, ainda, emissões de gases nocivos ao ambiente que impactam diretamente nas variações 
+           climáticas com o agravamento do efeito estufa. O objetivo da prevenção resume-se na implementação de ações para 
+           reduzir as causas dos incêndios e os riscos de propagação do fogo. 
+         </h3>
+       </div>
+       <div class="col-lg-12 col-md-12">
+         <div class="row">
+           <div class="col-md-3">
+             <ul class="nav nav-pills nav-pills-icons flex-column" role="tablist">
+                 <!--
+                                     color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger"
+                                 -->
+               <li class="nav-item">
+                 <a class="nav-link active" href="#dashboard-1" role="tab" data-toggle="tab">
+                   <i class="material-icons">dashboard</i> Dados
+                 </a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#schedule-1" role="tab" data-toggle="tab">
+                   <i class="material-icons">schedule</i> Estatística
+                 </a>
+               </li>
+             </ul>
+           </div>
+           <div class="col-md-8">
+             <div class="tab-content">
+               <div class="tab-pane active" id="dashboard-1">
+                 <h3>Dados nos mostram que 85% das causas dos incêndios são resultantes da ação antrópica (humana) e, destes: </h3>
+                   <h3>
+                     <ul>
+                       <li>40% foram ocasionados por queima para limpeza</li>
+                       <li>20% por incendiários</li>
+                       <li>15% por fatores diversos</li>
+                       <li>10% por fumantes</li>
+                     </ul> 
+                   </h3>
+               </div>    
+             <div class="tab-pane" id="schedule-1">
+                 <h3>O gráfico a seguir utiliza os dados do INPE (Instituto Nacional de Pesquisas Espaciais):</h3>
+                 <li>Gráfico</li>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ 
+ 
+ {% endblock %}
+ 
+ </html>

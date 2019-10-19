@@ -3526,7 +3526,7 @@ tbody.collapse.show {
   padding: 0.625rem 1.25rem;
   clear: both;
   font-weight: 400;
-  color: white;
+  color: inherit;
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
