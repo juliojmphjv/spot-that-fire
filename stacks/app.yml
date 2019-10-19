@@ -1,0 +1,28 @@
+version: "3.7"
+
+services:
+  app:
+    image: gcr.io/spot-that-fire-256218/app
+    volumes:
+      - data:/root/data
+    networks:
+      - proxy
+    deploy:
+      update_config:
+        parallelism: 1
+        delay: 10s
+        order: start-first
+      labels:
+        traefik.enable: "true"
+        traefik.port: "8000"
+        traefik.docker.network: "proxy"
+        traefik.frontend.rule: "Host:app.${DOMAIN?Variable DOMAIN not set}"
+        traefik.frontend.entryPoints: "http,https"
+        traefik.frontend.redirect.entryPoint: "https"
+
+volumes:
+  data:
+
+networks:
+  proxy:
+    external: true
