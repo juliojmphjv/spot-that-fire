@@ -12,3 +12,7 @@ def home(request):
 def boilerplate(request):
 
     return render(request, 'boilerplate.html')
+
+def whats_signup(request):
+
+    return render(request, 'qrcode.html')
