@@ -8,7 +8,7 @@ COPY ./requirements.txt .
 
 RUN pip install -r requirements.txt \
     && apt-get update -y \
-    && apt-get install -y runit \
+    && apt-get install -y runit upstart\
     && mkdir /etc/service
 
 COPY ./.docker/services /etc/service
