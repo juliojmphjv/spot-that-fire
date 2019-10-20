@@ -2,7 +2,39 @@
 
  {% block content %}
      {% load staticfiles %}
-
+  <body>
+    <nav class="navbar navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+      <div class="container">
+        <div class="navbar-translate">
+          <a class="navbar-brand" href="https://2019.spaceappschallenge.org/challenges/living-our-world/spot-fire-v20/details">
+            Nasa SpaceApps &</a>            
+            <a class="navbar-brand" href="https://2019.spaceappschallenge.org/challenges/living-our-world/spot-fire-v20/teams/inbellis/">
+              INBELLIS</a>  
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" color="white">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="../" class="dropdown-item">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="../missao" class="dropdown-item">Missão</a>
+            </li>
+            <li class="nav-item">
+                <a href="../cadastro" class="dropdown-item">Cadastro</a>
+            </li>
+            <li class="nav-item">
+              <a href="../estatistica" class="dropdown-item">Estatistica</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="section section-signup page-header" style="background-image: url('{% static 'assets/img/floresta_Amazonica.jpg' %}');">
         <div class="container">
           <div class="row">
