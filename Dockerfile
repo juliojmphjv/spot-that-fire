@@ -3,12 +3,13 @@ FROM python:3.7
 WORKDIR /root
 
 COPY ./requirements.txt .
-COPY ./.docker/services /etc/services
 
 RUN pip install -r requirements.txt \
     && apt-get update \
-    && apt-get install runit
+    && apt-get install runit \
+    && mkdir /etc/service
 
+COPY ./.docker/services /etc/service
 COPY app app
 COPY pages pages
 COPY services services
