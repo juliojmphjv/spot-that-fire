@@ -11,184 +11,113 @@
  =========================================================
 
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
-{% extends "base.html" %}
+ {% extends "base.html" %}
 
 
-{% block content %}
-
-    {% load staticfiles %}
-
-
-<body>
-  <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
-    <div class="container">
-      <div class="navbar-translate">
-        <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
-          Nasa SpaceApps </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <!-- <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-              <i class="material-icons">apps</i> Components
-            </a>
-            <div class="dropdown-menu dropdown-with-icons">
-              <a href="./index.html" class="dropdown-item">
-                <i class="material-icons">layers</i> Parceiros
-              </a>
-              <a href="https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html" class="dropdown-item">
-                <i class="material-icons">content_paste</i> Mapa
-              </a> -->
-              <a href="./index.html" class="dropdown-item">Mapa</a>
-          </li>
-          <li class="nav-item">
-              <a href="./index.html" class="dropdown-item">Sobre</a>
-          </li>
-          <li class="nav-item">
-              <a href="./index.html" class="dropdown-item">Parceiros</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="page-header header-filter" data-parallax="true" style="background-image: url('{% static 'assets/img/bg3.jpg' %}')">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 ml-auto mr-auto">
-          <div class="brand text-center">
-            <h1>Incêndios</h1>
-            <h3 class="title text-center">Como são causados e onde ocorrem?</h3>
-          </div>
+ {% block content %}
+ 
+     {% load staticfiles %}
+  <div class="section section-signup page-header" style="background-image: url('{% static 'assets/img/floresta_Amazonica.jpg' %}');">
+    <div class="container">     
+      <div class="col-md-8 ml-auto mr-auto">
+        <div class="brand text-center">
+            <h1 class="title">INBELLIS</h1>
+            <h3 class="title text-center">Combatentes de incêndios por meio de alertas de sms</h3>
+            <button class="btn  btn-link btn-primary btn-lg" >Quero fazer uma denúncia</button>
         </div>
+        <div></div>
+        <div></div>
+        <footer class="footer footer-default">
+          <div class="container">
+            <nav class="float-left">
+              <ul>
+                <li>
+                  <h3 color="white">
+                    Dados coletados diretamente do satélite VIRS da NASA <img src="../static/assets/img/satelite.png">
+                  </h3>
+                </li>
+              </ul>  
+            </nav>
+          </div>
+        </footer>  
+      </div> 
       </div>
     </div>
-  </div>
-  <div class="main main-raised">
+    <div class="main main-raised">
     <div class="container">
-      <div class="section text-center">
-        <h2 class="title">O quê são?</h2>
-        <h3>aaaa</h3>
-        <h2 class="title">Por quê prevenir incêndios?</h2>
-        <h3>lorem ipsumLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-          when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-          and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </h3>
+      <div class="section text-center" text-color="green">
+        <h1 class="title">O nosso planeta precisa de você!
+          <br>  
+            Ajude a salvá-lo informando-nos sobre incêndios e queimadas, leva apenas um minuto!
+        </h1>
       </div>
-      <div class="row justify-content-center">
-          <ul class="nav nav-pills nav-pills-icons" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link" href="#dashboard-1" role="tab" data-toggle="tab">
-                <i class="material-icons">dashboard</i> Dados
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#schedule-1" role="tab" data-toggle="tab">
-                <i class="material-icons">layers</i>Estatística
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#tasks-1" role="tab" data-toggle="tab">
-                <i class="material-icons">list</i> Prevenção
-              </a>
-            </li>
-          </ul>
-          <div class="tab-content tab-space">
-            <div class="tab-pane active" id="dashboard-1">
-                <p1>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by 
-                    the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; 
-                    and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. 
-                    These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being 
-                    able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or 
-                    the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds 
-                    in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures,
-                    or else he endures pains to avoid worse pains."
-                </p1>
-            </div>
-            <div class="tab-pane" id="schedule-1">
-              <p1>lorem ipsumLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p1>
-            </div>
-            <div class="tab-pane" id="tasks-1">
-              <p1>lewererewrorem ipsumLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p1>
+     <div class="section text-center">
+         <h2 class="title">O quê é um incêndio?</h2>
+         <h3>Um incêndio florestal é um fogo que se propaga sem controle num terreno florestal ou silvestre, 
+           afetando os combustíveis vegetais, flora e fauna. Um incêndio florestal distingue-se de outros tipos 
+           de incêndio pela sua ampla extensão, a velocidade com a qual se pode estender desde o seu lugar de origem, 
+           o seu potencial para mudar de direção inesperadamente, e a sua capacidade para superar obstáculos
+            como estradas, rios e aceiros.</h3>
+         <h2 class="title">Por quê prevenir incêndios?</h2>
+         <h3>O fogo tem sido o responsável direto por prejuízos de ordem econômica, social e ambiental, 
+           em que prejuízos causados pelos incêndios envolvem morte ou redução da capacidade produtiva dos cultivos, 
+           impactos nos rios, solos e, ainda, emissões de gases nocivos ao ambiente que impactam diretamente nas variações 
+           climáticas com o agravamento do efeito estufa.
+         </h3>
+       </div>
+       <div class="col-lg-12 col-md-12">
+         <div class="row">
+           <div class="col-md-3">
+             <ul class="nav nav-pills nav-pills-icons flex-column" role="tablist">
+                 <!--
+                                     color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger"
+                                 -->
+               <li class="nav-item">
+                 <a class="nav-link active" href="#dashboard-1" role="tab" data-toggle="tab">
+                   <i class="material-icons">dashboard</i> Dados
+                 </a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#schedule-1" role="tab" data-toggle="tab">
+                   <i class="material-icons">schedule</i> Estatística
+                 </a>
+               </li>
+             </ul>
+           </div>
+           <div class="col-md-8">
+             <div class="tab-content">
+               <div class="tab-pane active" id="dashboard-1">
+                 <h3>Dados nos mostram que 85% das causas dos incêndios são resultantes da ação antrópica (humana) e, destes: </h3>
+                   <h3>
+                     <ul>
+                       <li>40% foram ocasionados por queima para limpeza</li>
+                       <li>20% por incendiários</li>
+                       <li>15% por fatores diversos</li>
+                       <li>10% por fumantes</li>
+                     </ul> 
+                   </h3>
+               </div>    
+             <div class="tab-pane" id="schedule-1">
+                 <h3>O gráfico a seguir utiliza os dados do INPE (Instituto Nacional de Pesquisas Espaciais):</h3>
+                 <li>Gráfico</li>
+             </div>
             </div>
           </div>
+          <div class="text-center">
+          <h2 class="title">Como prevenir?</h2>
+          <h3>
+            Os incêndios florestais são em sua maior parte evitáveis e um programa de prevenção de incêndios tem de, 
+            necessariamente, incorporar trabalhos de conscientização e de educação da população.</h3>
+        </div>
+        <div>
+          <p></p>
         </div>
       </div>
-    </div>
-  </div>
-  <footer class="footer footer-default">
-    <div class="container">
-      <nav class="float-left">
-        <ul>
-          <li>
-            <a href="https://2019.spaceappschallenge.org/challenges/living-our-world/spot-fire-v20/details">
-              Nasa Space Apps
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="copyright float-right">
-        &copy;
-        <script>
-          document.write(new Date().getFullYear())
-        </script>, made with <i class="material-icons">favorite</i> by
-        <a href="https://2019.spaceappschallenge.org/challenges/living-our-world/spot-fire-v20/details" target="blank">Equipe 50</a>
-      </div>
-    </div>
-  </footer>
-  <script src="{% static 'assets/js/core/jquery.min.js' %}" type="text/javascript"></script>
-  <script src="{% static 'assets/js/core/popper.min.js' %}" type="text/javascript"></script>
-  <script src="{% static 'assets/js/core/bootstrap-material-design.min.js' %}" type="text/javascript"></script>
-  <script src="{% static 'assets/js/plugins/moment.min.js' %}"></script>
-  <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-  <script src="{% static 'assets/js/plugins/bootstrap-datetimepicker.js' %}" type="text/javascript"></script>
-  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-  <script src="{% static 'assets/js/plugins/nouislider.min.js' %}" type="text/javascript"></script>
-  <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-  <script src="{% static 'assets/js/material-kit.js' %}" type="text/javascript"></script>
-  <script>
-    $(document).ready(function() {
-      //init DateTimePickers
-      materialKit.initFormExtendedDatetimepickers();
-
-      // Sliders Init
-      materialKit.initSliders();
-    });
-
-
-    function scrollToDownload() {
-      if ($('.section-download').length != 0) {
-        $("html, body").animate({
-          scrollTop: $('.section-download').offset().top
-        }, 1000);
-      }
-    }
-
-  </script>
-</body>
-
-{% endblock %}
-
-</html>
+     </div>
+   </div>
+ </div>
+ 
+ 
+ {% endblock %}
+ 
+ </html>

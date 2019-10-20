@@ -13,7 +13,10 @@ def boilerplate(request):
 
     return render(request, 'boilerplate.html')
 
-def whats_signup(request):
+def mapa(request):
+    
+    return render(request, 'map.html')
 
-
-    return render(request, 'qrcode.html')
+def missao(request):
+    
+    return render(request, 'missao.html')

@@ -25,7 +25,9 @@ SECRET_KEY = "_j2k$6j@gub*tpqfmkfxyw*o21@1^vz@w^v6qk(#5!i#!1_tk6"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*.ngrok.io', "127.0.0.1", 'localhost']
+
+ALLOWED_HOSTS = ["*"]
+
 
 # Application definition
 
@@ -38,7 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "pages.apps.PagesConfig",
     "rest_framework",
-    "sms",
+    "cadastro",
 ]
 
 MIDDLEWARE = [
@@ -56,7 +58,7 @@ ROOT_URLCONF = "app.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [os.path.join(BASE_DIR, 'templates')],
+        "DIRS": [os.path.join(BASE_DIR, "templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -70,9 +72,7 @@ TEMPLATES = [
 ]
 
 
-TEMPLATE_DIRS = (
-    os.path.join(os.path.dirname(__file__), 'templates'),
-)
+TEMPLATE_DIRS = (os.path.join(os.path.dirname(__file__), "templates"),)
 
 
 WSGI_APPLICATION = "app.wsgi.application"
@@ -84,7 +84,7 @@ WSGI_APPLICATION = "app.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+        "NAME": os.path.join(BASE_DIR, "data/db.sqlite3"),
     }
 }
 
@@ -135,4 +135,5 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
 }
+
 

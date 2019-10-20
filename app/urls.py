@@ -24,4 +24,5 @@ urlpatterns = [
     path('', include('notification_sender.urls')),
     path("admin/", admin.site.urls),
     path("", include("pages.urls")),
+    path("", include("cadastro.urls"))
 ]

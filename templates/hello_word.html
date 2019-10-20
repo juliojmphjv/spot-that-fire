@@ -1,10 +1,166 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>HELLO WORD SPOT THAT FIRE</title>
-</head>
-<body>
-<h1>HELLO WORLD SPOT THAT FIRE</h1>
-</body>
-</html>
+<!--
+ =========================================================
+ * Material Kit - v2.0.6
+ =========================================================
+
+ * Product Page: https://www.creative-tim.com/product/material-kit
+ * Copyright 2019 Creative Tim (http://www.creative-tim.com)
+   Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
+
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+ {% extends "base.html" %}
+
+
+ {% block content %}
+ 
+     {% load staticfiles %}
+              <!-- Carousel Card -->
+              <div class="card card-raised card-carousel img-fluid">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="container">
+                      <img class="d-block img-fluid w-100" src="{% static 'assets/img/floresta_Amazonica.jpg' %}" alt="First slide">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h1 class="title">
+                          INBELLIS
+                        </h1>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                      <img class="d-block img-fluid w-100" src="{% static 'assets/img/rural.jpg' %}" alt="Second slide">
+                      <!--<div class="carousel-caption d-none d-md-block">
+                        <h4>
+                          <i class="material-icons">location_on</i>INFO DA FOTO
+                        #</h4>
+                      </div>-->
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                      <img class="d-block img-fluid w-100" src="{% static 'assets/img/wildfire.jpg' %}" alt="Third slide">
+                      <!--<div class="carousel-caption d-none d-md-block">
+                        <h4>
+                          <i class="material-icons">location_on</i>INFO DA FOTO
+                        </h4>
+                      </div>-->
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <i class="material-icons">keyboard_arrow_left</i>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <i class="material-icons">keyboard_arrow_right</i>
+                    <span class="sr-only">Next</span>
+                  </a>
+              <!-- End Carousel Card -->
+         <!-- <div class="col-md-8 ml-auto mr-auto">
+            <div class="brand text-center">
+              <h2 class="title">INBELLIS</h2> 
+               <img src="('{% static 'assets/img/logo.png' %}')"> 
+              <h3 class="title text-center">Combatentes de incêndios por meio de alertas de sms</h3>
+              <button class="btn  btn-link btn-primary btn-lg" >Quero fazer uma denúncia</button>
+            </div>
+         </div>
+       </div>
+       <div></div>
+       <div></div>
+       <footer class="footer footer-default">
+          <div class="container">
+            <nav class="float-left">
+              <ul>
+                <li> <h3>
+                    Dados coletados diretamente do satélite VIRS da NASA
+                  </h3><img src="assets/img/satelite.png">
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </footer>  
+     </div> -->
+     </div>
+   </div>
+   <div class="main main-raised">
+     <div class="container">
+       <div class="section text-center">
+         <h2 class="title">O quê é um incêndio?</h2>
+         <h3>Um incêndio florestal é um fogo que se propaga sem controle num terreno florestal ou silvestre, 
+           afetando os combustíveis vegetais, flora e fauna. Um incêndio florestal distingue-se de outros tipos 
+           de incêndio pela sua ampla extensão, a velocidade com a qual se pode estender desde o seu lugar de origem, 
+           o seu potencial para mudar de direção inesperadamente, e a sua capacidade para superar obstáculos
+            como estradas, rios e aceiros.</h3>
+         <h2 class="title">Por quê prevenir incêndios?</h2>
+         <h3>O fogo tem sido o responsável direto por prejuízos de ordem econômica, social e ambiental, 
+           em que prejuízos causados pelos incêndios envolvem morte ou redução da capacidade produtiva dos cultivos, 
+           impactos nos rios, solos e, ainda, emissões de gases nocivos ao ambiente que impactam diretamente nas variações 
+           climáticas com o agravamento do efeito estufa.
+         </h3>
+       </div>
+       <div class="col-lg-12 col-md-12">
+         <div class="row">
+           <div class="col-md-3">
+             <ul class="nav nav-pills nav-pills-icons flex-column" role="tablist">
+                 <!--
+                                     color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger"
+                                 -->
+               <li class="nav-item">
+                 <a class="nav-link active" href="#dashboard-1" role="tab" data-toggle="tab">
+                   <i class="material-icons">dashboard</i> Dados
+                 </a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#schedule-1" role="tab" data-toggle="tab">
+                   <i class="material-icons">schedule</i> Estatística
+                 </a>
+               </li>
+             </ul>
+           </div>
+           <div class="col-md-8">
+             <div class="tab-content">
+               <div class="tab-pane active" id="dashboard-1">
+                 <h3>Dados nos mostram que 85% das causas dos incêndios são resultantes da ação antrópica (humana) e, destes: </h3>
+                   <h3>
+                     <ul>
+                       <li>40% foram ocasionados por queima para limpeza</li>
+                       <li>20% por incendiários</li>
+                       <li>15% por fatores diversos</li>
+                       <li>10% por fumantes</li>
+                     </ul> 
+                   </h3>
+               </div>    
+             <div class="tab-pane" id="schedule-1">
+                 <h3>O gráfico a seguir utiliza os dados do INPE (Instituto Nacional de Pesquisas Espaciais):</h3>
+                 <li>Gráfico</li>
+             </div>
+            </div>
+          </div>
+          <div class="text-center">
+          <h2 class="title">Como prevenir?</h2>
+          <h3>
+            Os incêndios florestais são em sua maior parte evitáveis e um programa de prevenção de incêndios tem de, 
+            necessariamente, incorporar trabalhos de conscientização e de educação da população.</h3>
+        </div>
+        <div>
+          <p></p>
+        </div>
+      </div>
+     </div>
+   </div>
+ </div>
+ 
+ 
+ {% endblock %}
+ 
+ </html>
