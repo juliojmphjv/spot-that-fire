@@ -4,8 +4,23 @@ from twilio.twiml.messaging_response import MessagingResponse
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 from datawarehouse.bot_data import talks_data
+import time
 
 app = Flask(__name__)
+
+def cadastro(nome, telefone, email, cep, cidade, iptu):
+
+
+def salutation(msg):
+
+    if msg == '1':
+        return ''
+
+    if msg == '2':
+        return 'Reportar'
+    else:
+        return 'Olá, eu sou a Abellis, uma inteligencia artificial. Envie *1* para se cadastrar em nosso sistema para receber notificações de incêndios florestais e relatórios. ' \
+              'Ou envie *2* para reportar um incêndio.'
 
 @app.route("/sms", methods=['GET', 'POST'])
 def sms_reply():
@@ -16,13 +31,19 @@ def sms_reply():
     bd = request.form['Body']
     fr = request.form['From']
 
-    print(bd, fr)
+    resposta = salutation(bd)
+    # if bd == '1':
+    #
+    #
+    # saudacao = 'Olá, eu sou a Abellis, a inteligencia artificial da Inbellis.'
+    # options = 'Envie *1* para se cadastrar em nosso sistema para receber notificações de incêndios florestais e relatórios, ' \
+    #           'Ou envie *2* para reportar um incêndio.'
+    send = MessagingResponse()
+    send.message(resposta)
 
-    saudacao = 'Olá, eu sou a Abellis, como posso ajudar ?'
-    resp = MessagingResponse()
-    resp.message(saudacao)
 
-    return str(resp)
+
+    return str(send)
 
 def replier(msg):
 
