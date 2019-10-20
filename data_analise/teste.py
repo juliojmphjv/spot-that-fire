@@ -18,7 +18,7 @@ def read_data():
 
     df = pd.read_csv('focos.csv')
 
-    states = df.groupby(['estado']).ngroups
+    states = df.groupby(['estado']).size()
 
     print(states)
 

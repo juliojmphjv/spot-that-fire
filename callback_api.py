@@ -2,7 +2,7 @@
 from flask import Flask, request, redirect
 from twilio.twiml.messaging_response import MessagingResponse
 from chatterbot import ChatBot
-from chatterbot.trainers import  ListTrainer
+from chatterbot.trainers import ListTrainer
 from datawarehouse.bot_data import talks_data
 
 app = Flask(__name__)
@@ -31,7 +31,7 @@ def replier(msg):
 
 def train_smart_bot():
 
-    bot = ChatBot(name='Abellis', read_only=True, logic_adapters=['chatterbot.logic.MathematicalEvaluation', 'chatterbot.logic.BestMatch'])
+    bot = ChatBot(name='Abellis', read_only=False, logic_adapters=['chatterbot.logic.MathematicalEvaluation', 'chatterbot.logic.BestMatch'])
     list_trainer = ListTrainer(bot)
     for item in (talks_data.small_talk, talks_data.math_talk_1, talks_data.math_talk_2):
         list_trainer.train(item)
@@ -40,6 +40,5 @@ def train_smart_bot():
 
 if __name__ == "__main__":
 
-    train_smart_bot()
-    # app.run(debug=True, port=4000)
+    app.run(debug=True, port=4000)
 
