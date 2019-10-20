@@ -17,10 +17,6 @@ def whats_signup(request):
 
     return render(request, 'qrcode.html')
 
-def cadastro(request):
-    
-    return render(request, 'cadastro.html')
-
 def mapa(request):
     
     return render(request, 'map.html')

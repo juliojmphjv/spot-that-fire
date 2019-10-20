@@ -57,7 +57,8 @@
           <div class="row">
             <div class="col-lg-4 col-md-6 ml-auto mr-auto">
               <div class="card card-login">
-                <form class="form" method="" action="">
+                <form class="form" method="post" action="">
+                    {% csrf_token %}
                   <div class="card-header card-header-primary text-center">
                     <h4 class="card-title">Cadastro</h4>
                         <a href="../home" class="btn btn-link btn-primary" color="white">Por quê é importante se cadastrar?</a>
@@ -69,7 +70,8 @@
                           <i class="material-icons">face</i>
                         </span>
                       </div>
-                      <input type="text" class="form-control" placeholder="Nome completo" required>
+{#                      <input type="text" class="form-control" placeholder="Nome completo" required>#}
+                        {{ form.nome }}
                     </div>
                     <div class="input-group">
                         <div class="input-group-prepend">
@@ -77,7 +79,8 @@
                             <i class="material-icons">chat</i>
                             </span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Telefone" required>
+{#                        <input type="text" class="form-control" placeholder="Telefone" required>#}
+                        {{ form.telefone }}
                     </div>
                     <div class="input-group">
                       <div class="input-group-prepend">
@@ -85,7 +88,8 @@
                           <i class="material-icons">email</i>
                         </span>
                       </div>
-                      <input type="text" class="form-control" placeholder="E-mail">
+{#                      <input type="text" class="form-control" placeholder="E-mail">#}
+                        {{ form.email }}
                     </div>
                     <div class="input-group">
                         <div class="input-group-prepend">
@@ -93,7 +97,8 @@
                             <i class="material-icons">chat</i>
                           </span>
                         </div>
-                        <input type="text" class="form-control" placeholder="CEP">
+{#                        <input type="text" class="form-control" placeholder="CEP">#}
+                        {{ form.cep }}
                     </div>
                     <!-- Será que precisa de um if aqui?
                          <input type="checkbox" name="Não tenho CEP" value="cep" unchecked>Não tenho CEP<br>
@@ -104,7 +109,8 @@
                           <i class="material-icons">chat</i>
                           </span>
                       </div>
-                      <input type="text" class="form-control" placeholder="Cidade" required>
+{#                      <input type="text" class="form-control" placeholder="Cidade" required>#}
+                        {{ form.cidade }}
                     </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
@@ -112,12 +118,13 @@
                             <i class="material-icons">chat</i>
                           </span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Cadastro de propriedade rural (IPTU)">
+{#                        <input type="text" class="form-control" placeholder="Cadastro de propriedade rural (IPTU)">#}
+                          {{ form.iptu }}
                     </div>
                 </div>
                   <div class="footer text-center">
                     <p></p>
-                    <input type="Submit" value="Registrar"></input>
+                    <input type="Submit" value="Registrar"> </input>
                     <p></p>
                   </div>
                 </form>
