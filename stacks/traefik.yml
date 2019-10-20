@@ -49,7 +49,12 @@ services:
       --entrypoints='Name:http Address::80'
       --entrypoints='Name:https Address::443 TLS'
       --consul
-      --consul.endpoint="consul-leader:8500"
+      --acme
+      --acme.email=${EMAIL?Variable EMAIL not set}
+      --acme.storage="traefik/acme/account"
+      --acme.entryPoint=https
+      --acme.httpChallenge.entryPoint=http
+      --acme.onhostrule=true     --consul.endpoint="consul-leader:8500"
       --logLevel=INFO
       --accessLog
       --api
