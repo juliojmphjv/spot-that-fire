@@ -38,8 +38,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "pages.apps.PagesConfig",
     "cadastro.apps.CadastroConfig",
-    "rest_framework",
-    "sms",
 ]
 
 MIDDLEWARE = [
