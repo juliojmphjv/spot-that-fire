@@ -23,8 +23,7 @@ def builder():
 
 def compare_dataframes(old_df, new_df):
     if not old_df.equals(new_df):
-        old_df = old_df.concat(new_df, ignore_index=False)
-        return old_df
+        return pandas.concat((old_df, new_df), ignore_index=False)
 
     return old_df
 
