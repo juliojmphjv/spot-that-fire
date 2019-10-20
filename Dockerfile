@@ -17,6 +17,7 @@ COPY incra_data incra_data
 COPY cadastro cadastro
 COPY chat_bot chat_bot
 COPY callback_api.py callback_api.py
+COPY datawarehouse datawarehouse
 
 COPY ./.docker/entrypoint.sh /
 
