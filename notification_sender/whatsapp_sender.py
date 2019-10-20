@@ -18,6 +18,6 @@ class SendWhatsApp:
         print(message)
 
 if __name__ == '__main__':
-    SendWhatsApp().sender('+554188060395', 'Envio de mensagem de WhatsApp via software do Spot That Fire')
+    SendWhatsApp().sender('+554188487372', 'Envio de mensagem de WhatsApp via software do Spot That Fire')
 
 

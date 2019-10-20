@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "pages.apps.PagesConfig",
-    "rest_framework",
     "cadastro",
 #3    "cadastro.apps.CadastroConfig",
     # "notification_sender.apps.NotificationSenderConfig",
