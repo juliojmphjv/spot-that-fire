@@ -25,6 +25,7 @@ SECRET_KEY = "_j2k$6j@gub*tpqfmkfxyw*o21@1^vz@w^v6qk(#5!i#!1_tk6"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 ALLOWED_HOSTS = ["*"]
 
 # Application definition
@@ -37,10 +38,11 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "pages.apps.PagesConfig",
-    "cadastro.apps.CadastroConfig",
+    "cadastro",
+#3    "cadastro.apps.CadastroConfig",
     # "notification_sender.apps.NotificationSenderConfig",
     # "rest_framework",
-    # "sms",
+#    "sms",
 ]
 
 MIDDLEWARE = [
@@ -124,12 +126,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = "/static/"
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
 
-#   REST_FRAMEWORK = {
-#       # Use Django's standard `django.contrib.auth` permissions,
-#       # or allow read-only access for unauthenticated users.
-#       "DEFAULT_PERMISSION_CLASSES": [
-#           "rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly"
-#       ]
-#   }
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
+

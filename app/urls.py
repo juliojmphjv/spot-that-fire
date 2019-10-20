@@ -18,8 +18,10 @@ from django.urls import path, include
 from django.conf.urls import url
 
 
+
+
 urlpatterns = [
-    # path("", include("notification_sender.urls")),
+    path("", include("notification_sender.urls")),
     path("admin/", admin.site.urls),
     path("", include("pages.urls")),
     path("", include("cadastro.urls")),

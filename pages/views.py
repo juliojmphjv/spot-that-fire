@@ -7,6 +7,10 @@ def home(request):
     return render(request, "index.html")
 
 
+def mapa(request):
+
+    return render(request, 'map.html')
+
 def whats_signup(request):
 
     return render(request, "qrcode.html")
