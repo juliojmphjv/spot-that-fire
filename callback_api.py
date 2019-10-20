@@ -9,7 +9,7 @@ import time
 app = Flask(__name__)
 
 def cadastro(nome, telefone, email, cep, cidade, iptu):
-
+    pass
 
 def salutation(msg):
 
