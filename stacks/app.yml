@@ -14,11 +14,15 @@ services:
         order: start-first
       labels:
         traefik.enable: "true"
-        traefik.port: "8000"
+        traefik.django.port: "8000"
         traefik.docker.network: "proxy"
-        traefik.frontend.rule: "Host:www.${DOMAIN?Variable DOMAIN not set},${DOMAIN}"
-        traefik.frontend.entryPoints: "http,https"
-        traefik.frontend.redirect.entryPoint: "https"
+        traefik.django.frontend.rule: "Host:www.${DOMAIN?Variable DOMAIN not set},${DOMAIN}"
+        traefik.django.frontend.entryPoints: "http,https"
+        traefik.django.frontend.redirect.entryPoint: "https"
+        traefik.flask.port: "4000"
+        traefik.flask.frontend.rule: "Host:www.${DOMAIN?Variable DOMAIN not set};Path:/callback"
+        traefik.flask.frontend.entryPoints: "http,https"
+        traefik.flask.frontend.redirect.entryPoint: "https"
 
 volumes:
   data:

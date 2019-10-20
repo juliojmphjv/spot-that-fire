@@ -3,8 +3,11 @@ FROM python:3.7
 WORKDIR /root
 
 COPY ./requirements.txt .
+COPY ./.docker/services /etc/services
 
-RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt \
+    && apt-get update \
+    && apt-get install runit
 
 COPY app app
 COPY pages pages
