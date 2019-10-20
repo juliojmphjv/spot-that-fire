@@ -5,8 +5,8 @@ WORKDIR /root
 COPY ./requirements.txt .
 
 RUN pip install -r requirements.txt \
-    && apt-get update \
-    && apt-get install runit \
+    && apt-get update -y \
+    && apt-get install -y runit \
     && mkdir /etc/service
 
 COPY ./.docker/services /etc/service
