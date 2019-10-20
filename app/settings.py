@@ -25,8 +25,7 @@ SECRET_KEY = "_j2k$6j@gub*tpqfmkfxyw*o21@1^vz@w^v6qk(#5!i#!1_tk6"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['*.ngrok.io', "127.0.0.1", 'localhost']
 
 # Application definition
 
@@ -38,6 +37,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "pages.apps.PagesConfig",
+    "rest_framework",
+    "sms",
 ]
 
 MIDDLEWARE = [
@@ -126,3 +127,12 @@ STATIC_URL = "/static/"
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
+

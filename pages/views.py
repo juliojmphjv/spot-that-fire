@@ -15,4 +15,5 @@ def boilerplate(request):
 
 def whats_signup(request):
 
+
     return render(request, 'qrcode.html')

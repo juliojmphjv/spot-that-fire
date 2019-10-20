@@ -9929,3 +9929,6 @@ latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,confidence,
 11.98339,-86.1685,343.1,0.45,0.39,2019-10-18,18:48,N,nominal,1.0NRT,295.6,12.8,D
 12.70465,-84.8367,330.9,0.4,0.37,2019-10-18,18:48,N,nominal,1.0NRT,291.5,3.4,D
 12.81754,-86.19471,341.1,0.44,0.39,2019-10-18,18:48,N,nominal,1.0NRT,295.7,6.8,D
+
+
+
