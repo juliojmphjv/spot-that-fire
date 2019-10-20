@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import home, boilerplate, whats_signup, mapa, missao
+from .views import home, whats_signup, missao
 
 
 urlpatterns = [
