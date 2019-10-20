@@ -2,16 +2,10 @@ FROM python:3.7
 
 WORKDIR /root
 
-ENV DEBIAN_FRONTEND noninteractive
-
 COPY ./requirements.txt .
 
-RUN pip install -r requirements.txt \
-    && apt-get update -y \
-    && apt-get install -y runit upstart\
-    && mkdir /etc/service
+RUN pip install -r requirements.txt
 
-COPY ./.docker/services /etc/service
 COPY app app
 COPY pages pages
 COPY services services
