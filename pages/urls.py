@@ -6,7 +6,5 @@ urlpatterns = [
     path("home/", home, name="home"),
     path("", home, name="home"),
     path("whatsapp/", whats_signup, name="whats"),
-    path("cadastro/", cadastro, name="cadastro"),
-    path("map", mapa, name="mapa"),
-    path("missao", missao, name="missao")
+    path("missao", missao, name="missao"),
 ]
