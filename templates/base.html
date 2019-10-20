@@ -42,17 +42,17 @@
         </div>
         <div class="collapse navbar-collapse" color="white">
           <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+              <a href="{% url 'home' %}" class="dropdown-item">Home</a>
+              </li>
+              <li>
+                <a href="{% url 'missao' %}" class="dropdown-item">Missão</a>
+              </li>
             <li class="nav-item">
-                <a href="./" class="dropdown-item">Home</a>
+                <a href="{% url 'cadastro' %}" class="dropdown-item">Cadastro</a>
             </li>
             <li class="nav-item">
-                <a href="./missao" class="dropdown-item">Missão</a>
-            </li>
-            <li class="nav-item">
-                <a href="./cadastro" class="dropdown-item">Cadastro</a>
-            </li>
-            <li class="nav-item">
-              <a href="./estatistica" class="dropdown-item">Estatistica</a>
+              <a href="{% url 'estatistica' %}" class="dropdown-item">Estatistica</a>
             </li>
           </ul>
         </div>
