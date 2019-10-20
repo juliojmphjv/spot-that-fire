@@ -18,7 +18,9 @@ COPY cadastro cadastro
 COPY chat_bot chat_bot
 COPY callback_api.py callback_api.py
 COPY datawarehouse datawarehouse
-
+COPY data_visualization data_visualization
+COPY data_analise data_analise
+COPY plots plots
 COPY ./.docker/entrypoint.sh /
 
 VOLUME /root/data
