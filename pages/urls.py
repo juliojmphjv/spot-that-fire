@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import home, whats_signup, missao
+from .views import home, whats_signup, missao, estatistica
 
 
 urlpatterns = [
@@ -7,4 +7,5 @@ urlpatterns = [
     path("", home, name="home"),
     path("whatsapp/", whats_signup, name="whats"),
     path("missao", missao, name="missao"),
+    path("estatistica", estatistica, name="estatistica")
 ]
