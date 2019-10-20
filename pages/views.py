@@ -16,6 +16,7 @@ def missao(request):
 
     return render(request, "missao.html")
 
+
 def estatistica(request):
 
     return render(request, "estatistica.html")
