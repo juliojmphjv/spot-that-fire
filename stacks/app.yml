@@ -16,7 +16,7 @@ services:
         traefik.enable: "true"
         traefik.port: "8000"
         traefik.docker.network: "proxy"
-        traefik.frontend.rule: "Host:app.${DOMAIN?Variable DOMAIN not set}"
+        traefik.frontend.rule: "Host:www.${DOMAIN?Variable DOMAIN not set},${DOMAIN}"
         traefik.frontend.entryPoints: "http,https"
         traefik.frontend.redirect.entryPoint: "https"
 
