@@ -20,7 +20,7 @@ services:
         traefik.django.frontend.entryPoints: "http,https"
         traefik.django.frontend.redirect.entryPoint: "https"
         traefik.flask.port: "4000"
-        traefik.flask.frontend.rule: "Host:www.${DOMAIN?Variable DOMAIN not set};Path:/sms"
+        traefik.flask.frontend.rule: "Host:www.${DOMAIN?Variable DOMAIN not set};PathPrefixStrip:/sms"
         traefik.flask.frontend.entryPoints: "http,https"
         traefik.flask.frontend.redirect.entryPoint: "https"
 
