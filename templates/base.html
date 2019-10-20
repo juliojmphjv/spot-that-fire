@@ -26,9 +26,13 @@
   <body>
     <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
       <div class="container">
-        <div class="navbar-translate" style="contain">
-          <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
-            Nasa SpaceApps &</a><img style="" src="../static/assets/img/logo.png"> 
+        <div class="navbar-translate">
+          <h4>
+          <a class="navbar-brand" href="https://2019.spaceappschallenge.org/challenges/living-our-world/spot-fire-v20/details">
+            Nasa SpaceApps  &</a>
+            <a class="navbar-brand" href="https://2019.spaceappschallenge.org/challenges/living-our-world/spot-fire-v20/teams/inbellis/">
+            INBELLIS</a>  
+          </h4>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
             <span class="navbar-toggler-icon"></span>
@@ -38,14 +42,17 @@
         </div>
         <div class="collapse navbar-collapse" color="white">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a href="./map" class="dropdown-item">Mapa</a>
+              <li class="nav-item">
+              <a href="{% url 'home' %}" class="dropdown-item">Home</a>
             </li>
             <li class="nav-item">
-                <a href="./missao" class="dropdown-item">Missão</a>
+                <a href="{% url 'missao' %}" class="dropdown-item">Missão</a>
             </li>
             <li class="nav-item">
-                <a href="./cadastro" class="dropdown-item">Cadastro</a>
+                <a href="{% url 'cadastro' %}" class="dropdown-item">Cadastro</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'estatistica' %}" class="dropdown-item">Estatistica</a>
             </li>
           </ul>
         </div>
@@ -68,7 +75,7 @@
     </nav>
     <div class="copyright float-right">
       &copy;
-      <a href="https://2019.spaceappschallenge.org/challenges/living-our-world/spot-fire-v20/details" target="blank">Inbellis</a>
+      <a href="https://2019.spaceappschallenge.org/challenges/living-our-world/spot-fire-v20/teams/inbellis/projects" target="blank">Inbellis</a>
       <script>
         document.write(new Date().getFullYear())
       </script>

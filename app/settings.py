@@ -28,7 +28,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -41,6 +40,10 @@ INSTALLED_APPS = [
     "pages.apps.PagesConfig",
     "rest_framework",
     "cadastro",
+#3    "cadastro.apps.CadastroConfig",
+    # "notification_sender.apps.NotificationSenderConfig",
+    # "rest_framework",
+#    "sms",
 ]
 
 MIDDLEWARE = [
@@ -135,3 +138,4 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
 }
+

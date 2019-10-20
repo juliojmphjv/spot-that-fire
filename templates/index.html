@@ -1,16 +1,3 @@
-<!--
- =========================================================
- * Material Kit - v2.0.6
- =========================================================
-
- * Product Page: https://www.creative-tim.com/product/material-kit
- * Copyright 2019 Creative Tim (http://www.creative-tim.com)
-   Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
-
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
  {% extends "base.html" %}
 
 
@@ -21,9 +8,11 @@
     <div class="container">     
       <div class="col-md-8 ml-auto mr-auto">
         <div class="brand text-center">
-            <h1 class="title">INBELLIS</h1>
-            <h3 class="title text-center">Combatentes de incêndios por meio de alertas de sms</h3>
-            <button class="btn  btn-link btn-primary btn-lg" >Quero fazer uma denúncia</button>
+            <img style="" src="../static/assets/img/logo.png">
+            <h3 class="title text-center">Combatentes de incêndios por meio de Inteligência Artificial (IA)</h3>
+            <a href="./cadastro" class="btn btn-white btn-upgrade btn-lg" target="_blank">
+              Quero fazer meu cadastro!
+            </a>
         </div>
         <div></div>
         <div></div>
@@ -98,8 +87,13 @@
                    </h3>
                </div>    
              <div class="tab-pane" id="schedule-1">
-                 <h3>O gráfico a seguir utiliza os dados do INPE (Instituto Nacional de Pesquisas Espaciais):</h3>
-                 <li>Gráfico</li>
+                <h3>Para fazermos as estatísticas utilizamos o INPE (Instituto Nacional de Pesquisas Espaciais), 
+                    o INCRA (Instituto de Coloninzação e Reforma Agrária) e o Banco de Dados da NASA (VIRS):</h3>
+                    <a href="{% url 'estatistica' %}" class="btn btn-rose btn-upgrade btn-lg" target="_blank">
+                      Estatística
+                    </a>
+                </h3>
+              </div>
              </div>
             </div>
           </div>
