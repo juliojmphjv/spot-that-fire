@@ -14,11 +14,12 @@ def cadastro(nome, telefone, email, cep, cidade, iptu):
 
 def salutation(msg):
 
-    if msg == "1":
-        return ""
+    if msg == '1':
+        return 'Show, ficamos muito felizes por ter você como nosso protetor das Florestas. Para se cadastrar, acesse o site: https://inbellis.co/cadastro/ '
 
-    if msg == "2":
-        return "Reportar"
+    if msg == '2':
+        return 'Ok, por favor, informe somente um endereço e cidade o mais proximo possivel do foco do incendio e nossa inteligencia artificial irá analisar e reportar população proxima e autoridades.'
+
     else:
         return (
             "Olá, eu sou a Abellis, uma inteligencia artificial. Envie *1* para se cadastrar em nosso sistema para receber notificações de incêndios florestais e relatórios. "
