@@ -5,8 +5,7 @@ from twilio.rest import Client
 class SendWhatsApp:
 
     def __init__(self):
-        self.client = Client('AC65bd2c4c594ae8a95b4eee45a1658080', '2c93326193e112ea5eda1fb62c410e0d')
-        self.from_whatsapp_number = '+14155238886'
+        pass
 
     def sender(self, to_whatsapp_number, message):
 
