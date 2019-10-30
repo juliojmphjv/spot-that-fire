@@ -11,14 +11,16 @@ dataframe_incra_path = "data/incra.pickle"
 def builder():
 
     new_data = StringIO(download_viirs_nrt_today())
-
-    if path.isfile(dataframe_path):
-        new_df = pandas.read_csv(new_data)
-        old_df = pandas.read_pickle(dataframe_path)
-        compare_dataframes(old_df, new_df).to_pickle(dataframe_path)
-    else:
-        df = pandas.read_csv(new_data)
-        df.to_pickle(dataframe_path)
+    try:
+        if path.isfile(dataframe_path):
+            new_df = pandas.read_csv(new_data)
+            old_df = pandas.read_pickle(dataframe_path)
+            compare_dataframes(old_df, new_df).to_pickle(dataframe_path)
+        else:
+            df = pandas.read_csv(new_data)
+            df.to_pickle(dataframe_path)
+    except:
+        pass
 
 
 def compare_dataframes(old_df, new_df):
